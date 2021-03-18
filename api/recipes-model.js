@@ -56,7 +56,24 @@ const getById = async (recipe_id) => {
     .leftJoin('ingredients as i','si.ingredient_id', 'i.ingredient_id')
     .where('r.recipe_id', recipe_id)
   
-  return recipeData
+  const ingredients = recipeData.reduce((acc, val) => {
+    if (val.ingredient_id) {
+      return (
+        acc.concat((({ingredient_id, ingredient_name, quantity}) => {
+          return ({ingredient_id, ingredient_name, quantity})
+        })(val))
+      )
+    }
+    return acc
+  }, [])
+
+  const returnRecipe = {
+    recipe_id: recipeData[0].recipe_id,
+    recipe_name: recipeData[0].recipe_name,
+    created_at: recipeData[0].created_at,
+  }
+
+  return ingredients
 };
 
 module.exports = { getById }
