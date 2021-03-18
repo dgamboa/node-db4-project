@@ -1,10 +1,13 @@
 const router = require('express').Router();
-// import middleware
+const { checkRecipeId } = require('./recipes-middleware');
 const Recipe = require('./recipes-model')
 
-router.get('/:recipe_id', async (req, res, next) => {
+router.get('/:recipe_id', checkRecipeId, async (req, res, next) => {
+  const { recipe_id } = req.params;
+
   try {
-    res.json({ msg: "here" })
+    const recipe = await Recipe.getById(recipe_id);
+    res.json(recipe)
   } catch(err) { next(err) }
 });
 
