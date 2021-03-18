@@ -60,12 +60,12 @@ Before writing any code, write out all desired tables in the data model and dete
 
 #### Project Scaffolding
 
-- Put an Express application together starting with the `package.json` and a `knexfile.js`. Use existing projects as reference if needed.
+- [x] Put an Express application together starting with the `package.json` and a `knexfile.js`. Use existing projects as reference if needed.
 
 #### Migrations and Seeds
 
-- Write a migration file that creates all tables necessary to model this data
-- Write seed files to populate the tables with test data. **Hint**: Keep your recipes simple or this step could become extremely time consuming.
+- [ ] Write a migration file that creates all tables necessary to model this data
+- [ ] Write seed files to populate the tables with test data. **Hint**: Keep your recipes simple or this step could become extremely time consuming.
 
 #### Data Access
 
