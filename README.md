@@ -4,10 +4,10 @@
 
 ### Task 1: Project Setup
 
-- [ ] Fork and clone the repository.
-- [ ] Implement your project in a `firstname-lastname` branch.
-- [ ] Create a pull request of `firstname-lastname` against your `main` branch.
-- [ ] Open the assignment in Canvas and submit your pull request.
+- [x] Fork and clone the repository.
+- [x] Implement your project in a `firstname-lastname` branch.
+- [x] Create a pull request of `firstname-lastname` against your `main` branch.
+- [x] Open the assignment in Canvas and submit your pull request.
 
 ### Task 2: Minimum Viable Product
 
@@ -60,12 +60,12 @@ Before writing any code, write out all desired tables in the data model and dete
 
 #### Project Scaffolding
 
-- Put an Express application together starting with the `package.json` and a `knexfile.js`. Use existing projects as reference if needed.
+- [x] Put an Express application together starting with the `package.json` and a `knexfile.js`. Use existing projects as reference if needed.
 
 #### Migrations and Seeds
 
-- Write a migration file that creates all tables necessary to model this data
-- Write seed files to populate the tables with test data. **Hint**: Keep your recipes simple or this step could become extremely time consuming.
+- [x] Write a migration file that creates all tables necessary to model this data
+- [x] Write seed files to populate the tables with test data. **Hint**: Keep your recipes simple or this step could become extremely time consuming.
 
 #### Data Access
 
