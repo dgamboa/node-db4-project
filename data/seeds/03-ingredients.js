@@ -8,6 +8,7 @@ exports.seed = function(knex) {
         {ingredient_name: "Pasta"},
         {ingredient_name: "Beef"},
         {ingredient_name: "Sauce"},
+        {ingredient_name: "Seasoning"},
       ]);
     });
 };
